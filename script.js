@@ -26,6 +26,15 @@ window.onscroll = function() {
     document.querySelector('nav').style.top = "0";
   } else {
     document.querySelector('nav').style.top = "-60px";
+    // close menu on scroll, only on mobile
+
+    var mq = window.matchMedia( "(max-width: 960px)" );
+    if (mq.matches) {
+      menuBtn.classList.remove('open')
+      menuOpen = false;
+      var menuLinks = document.getElementsByClassName('allLinks')[0]
+      menuLinks.style.display = 'none'
+    }
   }
   prevScrollpos = currentScrollPos;
 }

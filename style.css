@@ -204,7 +204,11 @@ nav .allLinks {
     flex-direction: column;
   }
   nav{
-    height: 50px;
+    min-height: 50px;
+    background: var(--light-main-bg);
+  }
+  nav button{
+    margin-bottom:10px;
   }
 }
 
