@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NYP LIT</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins&family=Spartan:wght@400;700&display=swap");
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav>
+      <!-- <img src="allimages/Logo.png"/> -->
+      <div class="menu-btn">
+        <div class="menu-btn__burger"></div>
+      </div>
+      <div class="logo_link">
+        <div class="logo">
+          <img src="allimages/Logo.png" loading='lazy' />
+        </div>
+        <div class="allLinks">
+          <a href="/" class="menu-links">Home</a>
+          <a href="/#about" class="menu-links">About</a>
+          <a href="/#events" class="menu-links">Events</a>
+          <a href="/#socials" class="menu-links">Socials</a>
+          <a href='https://forms.gle/ajtYmWrzzpt1SumH7' target='_blank'><button class="CTAbutton">Join Us</button></a>
+        </div>
+      </div>
+    </nav>
+    <div id="progress-bar"></div>
+
+    <section id="intro">
+      <div class="p p-3"></div>
+      <div class="p p-3"></div>
+      <div class="p p-3"></div>
+      <div class="p p-3"></div>
+      <div class="p p-3"></div>
+      <h1><span>Empowering women</span> of our generation.</h1>
+      <p>
+        Interested in learning programming but not sure where to start? We’re
+        here for you. We cover the basics of web development, math in IT,
+        python programming and much more!
+      </p>
+      <a href='https://forms.gle/ajtYmWrzzpt1SumH7' target='_blank'><button class="CTAbutton">Join Us</button></a>
+    </section>
+
+    <section id="about">
+      <div>
+        <div class="columnHalf">
+          <h1>About <span>NYP LIT</span></h1>
+          <p>
+            NYP Ladies in Tech is a special interest group in NYP. All female
+            students that are interested in Information Technology are welcome
+            to join this Interest Group. We aim to promote IT skills to more female
+            students.
+          </p>
+          <div class="socialicons">
+            <a href="https://www.instagram.com/nyp_lit/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://discord.com/invite/kWpfmYRU" target="_blank"><i class="fab fa-discord"></i></a>
+            <a href="https://github.com/nyp-lit/" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/nyp_lit/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <a href='https://forms.gle/ajtYmWrzzpt1SumH7' target='_blank'><button class="CTAbutton">Join Us</button></a>
+        </div>
+        <div class="columnHalf">
+          <img src="allimages/computerVector.png" alt="computer vector svg" loading='lazy'/>
+        </div>
+      </div>
+    </section>
+
+    <section id="events">
+      <h1>Our <span>Events</span></h1>
+      <div id="filters">
+        <button class="btn active" onclick="filterSelection('all')">
+          Show all
+        </button>
+        <button class="btn" onclick="filterSelection('UpcomingEvents')">
+          Upcoming Events
+        </button>
+        <button class="btn" onclick="filterSelection('PastEvents')">
+          Past Events
+        </button>
+      </div>
+
+      <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+      <div class="container">
+        <div class="card UpcomingEvents">
+          <img src="allimages/exampleIGPost.png" loading='lazy' />
+          <h2>Coding Games for Kids</h2>
+          <p><span>18 October 2021</span></p>
+          <p>NYP LIT x NYC, make learning fun for kids via Zoom! </p>
+          <a href="#" target="_blank">More Details</a>
+        </div>
+        <div class="card PastEvents">
+          <img src="allimages/exampleIGPost.png" loading='lazy'/>
+          <h2>Curabitur in nunc</h2>
+          <p><span>18 October 2021</span></p>
+          <p>Maecenas nibh velit, bibendum at dapibus ac, tristique ut tellus.</p>
+          <a href="#" target="_blank">More Details</a>
+        </div>
+        <div class="card PastEvents">
+          <img src="allimages/exampleIGPost.png" loading='lazy'/>
+          <h2>Nunc vehicula est id </h2>
+          <p><span>18 October 2021</span></p>
+          <p>Proin faucibus, diam non dapibus placerat, tortor neque euismod mi</p>
+          <a href="#" target="_blank">More Details</a>
+        </div>
+        
+      </div>
+      <button id="loadmore">Load More</button>
+    </section>
+
+    <footer>
+      <div class="footer" id="socials">
+        <div class="columnHalf">
+          <h1>NYP LIT, Ladies In Tech</h1>
+          <div class="socialicons">
+            <a href="https://www.instagram.com/nyp_lit/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://discord.com/invite/kWpfmYRU" target="_blank"><i class="fab fa-discord"></i></a>
+            <a href="https://github.com/nyp-lit/" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/nyp_lit/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="columnHalf">
+          <p>
+            For more information, feel free to check out our socials or contact
+            us at <a href="mailto:nyplit@gmail.com">nyplit@gmail.com</a>
+          </p>
+        </div>
+      </div>
+      <p class="copyright">
+        Copyright © 2021, NYP LIT. All Rights Reserved.<br> Made by
+        <a href="https://github.com/jolenechong" target="_blank">Jolene</a>
+      </p>
+    </footer>
+    
+  </body>
+</html>
