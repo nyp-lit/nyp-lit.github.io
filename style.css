@@ -322,6 +322,11 @@ section {
   }
 }
 
+#about {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 #about > div {
   display: flex;
   max-width: 1200px;
@@ -344,6 +349,9 @@ section {
   font-size: 1.5rem;
   padding: 10px 0;
   padding-right: 10px;
+}
+#about p{
+  margin: 10px 0;
 }
 
 .socialicons a{
