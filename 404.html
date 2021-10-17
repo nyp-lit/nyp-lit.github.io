@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorry, Page not Found :( | NYP LIT</title>
+    <link rel="stylesheet" href="style.css" />
+
+
+    <style>
+        #error{
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        #error h1:nth-child(1){
+            font-size: 70px;
+        }
+        #error h1:nth-child(2){
+            padding-bottom: 10px;
+        }
+
+        #error p a{
+            color: var(--accent-color);
+        }
+        #error p{
+            max-width: 700px;
+            width: 100%;
+            padding: 10px 10px 20px 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="menu-btn">
+          <div class="menu-btn__burger"></div>
+        </div>
+        <div class="logo_link">
+          <div class="logo">
+            <img src="allimages/Logo.png" loading="lazy" />
+          </div>
+          <div class="allLinks">
+            <a href="/" class="menu-links">Home</a>
+            <a href="/#about" class="menu-links">About</a>
+            <a href="/#events" class="menu-links">Events</a>
+            <a href="/#socials" class="menu-links">Socials</a>
+            <a href="https://forms.gle/ajtYmWrzzpt1SumH7" target="_blank"
+              ><button class="CTAbutton">Join Us</button></a>
+          </div>
+        </div>
+      </nav>
+
+      <section id="error">
+          <h1>404</h1>
+          <h1><span>Sorry</span>, Page Not Found :( </h1>
+          <p>The page you're looking for doesn't seem to exist. If you think something is broken, report a problem at <a href="mailto:nyplit@gmail.com">nyplit@gmail.com</a></p>
+          <button class="CTAbutton">Return to Home</button>
+      </section>
+    
+</body>
+</html>
