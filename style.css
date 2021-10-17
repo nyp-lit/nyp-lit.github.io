@@ -204,7 +204,7 @@ nav .allLinks {
     flex-direction: column;
   }
   nav{
-    min-height: 50px;
+    min-height: 55px;
     background: var(--light-main-bg);
   }
   nav button{
