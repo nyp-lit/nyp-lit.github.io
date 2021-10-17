@@ -50,7 +50,6 @@ function filterSelection(c) {
   let currentItems = 3;
 
   loadmore.addEventListener('click', (e) => {
-    console.log('hi')
       const elementList = [...document.querySelectorAll('.card')];
       for (let i = currentItems; i < currentItems + 3; i++) {
           if (elementList[i]) {
