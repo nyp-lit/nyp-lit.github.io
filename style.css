@@ -565,3 +565,17 @@ footer .columnHalf:nth-child(2) {
   position: fixed;
   z-index: 200;
 }
+
+
+/* mobile view scrolling */
+@media screen and (max-width: 961px) {
+  .card{
+    scroll-snap-align: start;
+  }
+  .container{
+    display: flex;
+    margin: 10px;
+    scroll-snap-type: x mandatory;
+    overflow: auto;
+  }
+}
