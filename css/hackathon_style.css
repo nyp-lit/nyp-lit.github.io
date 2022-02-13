@@ -28,7 +28,7 @@ p{
 
 #about>div,
 #prizes>div,
-#rubrics>div,
+#criteria>div,
 #submissions>div{
     max-width: 900px;
     margin: auto;
@@ -93,7 +93,7 @@ footer h1{
         font-size: 0.8rem;
     }
 }
-#schedule, #prizes, #rubrics, #submissions{
+#schedule, #prizes, #criteria, #submissions{
     padding-top: 100px;
 }
 
@@ -103,6 +103,6 @@ footer h1{
     color: #d3beff;
 }
 
-#rubrics ul{
+#criteria ul{
     margin: 0 30px 0 30px;
 }
