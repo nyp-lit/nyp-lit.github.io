@@ -1,0 +1,88 @@
+#intro{
+    height: 100vh;
+    margin: 10px;
+    text-align: center;
+}
+
+#intro p{
+    max-width: 900px;
+}
+
+h1,h3{
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+p{
+    padding-top: 5px;
+    padding-bottom: 30px;
+}
+
+#intro .CTAButton{
+ display: inline-block;   
+}
+
+#about{
+    margin: 20px;
+    height: 600px;
+}
+
+#about>div,
+#prizes>div,
+#submissions>div{
+    max-width: 900px;
+}
+
+ul{
+    list-style-position: inside;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    list-style-type: disc;
+}
+
+li{
+    margin: 10px;
+}
+
+#intro p a{
+    color: white;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#schedule{
+    height: 500px;
+}
+
+#schedule>div{
+    width: 100%;
+}
+
+table{
+    text-align: left;
+    font-size: 0.9rem;
+    width: 90%;
+    margin: auto;
+    max-width: 700px;
+}
+th,td{
+    border-bottom: 2px #a553b6 solid;
+    padding: 5px 10px 5px 10px;
+}
+#prizes{
+    margin: 50px 20px 50px 20px;
+}
+
+footer h1{
+    text-align: left;
+}
+
+.half{
+    display: flex;
+}
+.half>div:nth-child(1){
+    flex: 1 50%;
+}
+.half>div:nth-child(2){
+    flex: 1 50%;
+}

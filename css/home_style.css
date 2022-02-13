@@ -1,0 +1,254 @@
+/* css for stars */
+.p {
+  position: absolute;
+  left: 0px;
+  top: 50px;
+  width: 1px;
+  height: 1px;
+  background-color: white;
+  animation-name: particleAnimation;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  transform: rotate(45deg);
+}
+.p::before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 100px;
+  right: 1px;
+  top: 0px;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(255, 255, 255, 0.4) 100%
+  );
+}
+.p-3 {
+  animation-duration: 5s;
+  top: 100%;
+}
+
+.p-3:nth-child(2) {
+  animation-duration: 10s;
+  top: 80%;
+}
+
+.p-3:nth-child(3) {
+  animation-duration: 5s;
+  top: 60%;
+}
+
+.p-3:nth-child(4) {
+  animation-duration: 10s;
+  top: 40%;
+}
+
+.p-3:nth-child(5) {
+  animation-duration: 8s;
+  top: 20%;
+}
+
+@keyframes particleAnimation {
+  from {
+    top: 0;
+  }
+  to {
+    left: calc(100% + 10px);
+  }
+}
+
+/* end of css for stars */
+
+/* css for intro section */
+#intro {
+  background: var(--main-bg);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+
+#intro h1 {
+  max-width: 600px;
+}
+
+#intro p {
+  padding-top: 20px;
+  max-width: 800px;
+}
+
+#intro .CTAbutton {
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 960px) {
+  section {
+    padding: 10px;
+  }
+}
+/* end of css for intro section */
+
+/* css for about section */
+@media screen and (max-width: 960px) {
+  #about {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  #events {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+#about {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#about > div {
+  display: flex;
+  max-width: 1200px;
+  align-items: center;
+}
+#about img {
+  max-width: 500px;
+  width: 100%;
+}
+#about .CTAbutton {
+  margin-top: 25px;
+}
+
+#about p{
+  margin: 10px 0;
+}
+
+
+/* end of css about section */
+
+/* css for events section */
+#events {
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(
+    -120.95deg,
+    rgb(151 82 255 / 10%) 0%,
+    #200858 60%
+  );
+}
+
+
+#events {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.container {
+  margin: 20px 0;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.card {
+  float: left;
+  background-color: var(--light-text);
+  color: #000000;
+  width: 300px;
+  height: 375px;
+  text-align: left;
+  margin: 10px;
+  border-radius: 10px;
+  display: none;
+  transition: 400ms;
+  position: relative;
+}
+
+.card h2 {
+  padding: 10px 10px 0 10px;
+  font-size: 22px;
+}
+
+.card p {
+  padding: 5px 5px 0 10px;
+  font-size: 0.9rem;
+}
+
+.card a {
+  color: var(--accent-color);
+  position: absolute;
+  bottom: 15px;
+  left: 10px;
+  display: inline-block;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 300px;
+  height: 215px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.show {
+  display: block;
+}
+
+.btn {
+  border: 2px var(--accent-color) solid;
+  outline: none;
+  padding: 10px 16px;
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--light-text);
+  border-radius: 30px;
+  transition: 400ms;
+  margin: 5px;
+}
+
+.btn:hover {
+  background-color: #c1236b;
+}
+
+.btn.active {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+/* end of css for events section */
+
+
+/* load more qn */
+#loadmore {
+  margin: 20px auto 0px;
+  display: block;
+  border: none;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  color: white;
+  background-color: transparent;
+  border: white 2px solid;
+  border-radius: 10px;
+}
+
+
+/* mobile view scrolling */
+@media screen and (max-width: 961px) {
+  .card{
+    scroll-snap-align: start;
+  }
+  .container{
+    display: flex;
+    margin: 10px;
+    scroll-snap-type: x mandatory;
+    overflow: auto;
+  }
+}
