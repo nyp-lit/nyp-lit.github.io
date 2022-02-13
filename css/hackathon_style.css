@@ -57,10 +57,11 @@ li{
 
 table{
     text-align: left;
-    font-size: 0.9rem;
+    font-size: 1rem;
     width: 90%;
+    max-width: 900px;
+    width: 100%;
     margin: auto;
-    max-width: 700px;
 }
 th,td{
     border-bottom: 2px #a553b6 solid;
@@ -87,7 +88,16 @@ footer h1{
     #intro h1, #about h1,#schedule h1,#prizes h1,#submission h1{
         font-size: 2rem;
     }
+    table{
+        font-size: 0.8rem;
+    }
 }
 #schedule, #prizes, #submissions{
     padding-top: 100px;
+}
+
+.eventDetails{
+    margin-top: 2px;
+    display: inline-block;
+    color: #d3beff;
 }
