@@ -22,22 +22,23 @@ p{
  display: inline-block;   
 }
 
-#about{
+#about,#schedule,#prizes,#submissions{
     margin: 20px;
-    height: 600px;
 }
 
 #about>div,
 #prizes>div,
 #submissions>div{
     max-width: 900px;
+    margin: auto;
 }
 
 ul{
-    list-style-position: inside;
+    list-style-position: outside;
     padding-top: 5px;
     padding-bottom: 30px;
     list-style-type: disc;
+    margin-left: 12px;
 }
 
 li{
@@ -48,10 +49,6 @@ li{
     color: white;
     display: inline-block;
     margin-right: 10px;
-}
-
-#schedule{
-    height: 500px;
 }
 
 #schedule>div{
@@ -69,9 +66,6 @@ th,td{
     border-bottom: 2px #a553b6 solid;
     padding: 5px 10px 5px 10px;
 }
-#prizes{
-    margin: 50px 20px 50px 20px;
-}
 
 footer h1{
     text-align: left;
@@ -85,4 +79,15 @@ footer h1{
 }
 .half>div:nth-child(2){
     flex: 1 50%;
+}
+@media screen and (max-width: 600px) {
+    .half{
+        flex-direction: column;
+    }
+    #intro h1, #about h1,#schedule h1,#prizes h1,#submission h1{
+        font-size: 2rem;
+    }
+}
+#schedule, #prizes, #submissions{
+    padding-top: 100px;
 }
